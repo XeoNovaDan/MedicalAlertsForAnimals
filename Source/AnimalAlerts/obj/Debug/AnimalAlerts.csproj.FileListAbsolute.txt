@@ -2,3 +2,7 @@ E:\Documents\GitHub\AnimalAlerts\Assemblies\AnimalAlerts.dll
 E:\Documents\GitHub\AnimalAlerts\Source\AnimalAlerts\obj\Debug\AnimalAlerts.csprojAssemblyReference.cache
 E:\Documents\GitHub\AnimalAlerts\Source\AnimalAlerts\obj\Debug\AnimalAlerts.csproj.CoreCompileInputs.cache
 E:\Documents\GitHub\AnimalAlerts\Source\AnimalAlerts\obj\Debug\AnimalAlerts.dll
+E:\Documents\GitHub\MedicalAlertsForAnimals\Assemblies\AnimalAlerts.dll
+E:\Documents\GitHub\MedicalAlertsForAnimals\Source\AnimalAlerts\obj\Debug\AnimalAlerts.csprojAssemblyReference.cache
+E:\Documents\GitHub\MedicalAlertsForAnimals\Source\AnimalAlerts\obj\Debug\AnimalAlerts.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\MedicalAlertsForAnimals\Source\AnimalAlerts\obj\Debug\AnimalAlerts.dll

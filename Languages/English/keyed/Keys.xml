@@ -6,9 +6,10 @@
 
     <AnimalNeedsRescue>Animal needs rescue</AnimalNeedsRescue>
     <AnimalsNeedRescue>Animals need rescue</AnimalsNeedRescue>
-    <AnimalsNeedRescueDesc>These animals are incapacitated on the ground:\n\n{0}\nSend a colonist to rescue them and carry them back to bed.\n\n(To rescue, select a colonist, then right click on the victim and select Rescue.</AnimalsNeedRescueDesc>
+    <AnimalsNeedRescueDesc>These animals are incapacitated on the ground:\n\n{0}\nSend a colonist to rescue them and carry them back to bed.\n\n(To rescue, select a colonist, then right click on the victim and select Rescue.)</AnimalsNeedRescueDesc>
 
-    <AnimalsWithLifeThreateningDiseaseAmputationDesc>Animals are at risk for death because of severe illness:\n\n{0}\nIf possible, consider amputating or replacing infected limbs in order to keep animals alive.</AnimalsWithLifeThreateningDiseaseAmputationDesc>
+    <AnimalsWithLifeThreateningDisease>Medical emergency (animals)</AnimalsWithLifeThreateningDisease>
+    <AnimalsWithLifeThreateningDiseaseAmputationDesc>Animals are at risk of death because of severe illness:\n\n{0}\nIf possible, consider amputating or replacing infected limbs in order to keep animals alive.</AnimalsWithLifeThreateningDiseaseAmputationDesc>
     <AnimalsWithLifeThreateningDiseaseDesc>Animals are at risk of death because of severe illness:\n\n{0}\nMake sure that they get the best medical care possible.</AnimalsWithLifeThreateningDiseaseDesc>
 
 </LanguageData>

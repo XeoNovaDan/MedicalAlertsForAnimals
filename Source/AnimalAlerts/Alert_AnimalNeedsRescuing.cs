@@ -33,7 +33,7 @@ namespace AnimalAlerts
             StringBuilder stringBuilder = new StringBuilder();
             foreach (Pawn pawn in AnimalAlertsUtility.SortedAnimalList(AnimalsNeedingRescue))
             {
-                stringBuilder.AppendLine("    " + pawn.LabelShort + (pawn.HasBondRelation() ? $" {"BondBrackets".Translate()}" : ""));
+                stringBuilder.AppendLine($"    {pawn.LabelShort} {((pawn.Name != null && !pawn.Name.Numerical) ? "(" + pawn.KindLabel + ")" : "")} {(pawn.HasBondRelation() ? "BondBrackets".Translate() : "")}");
             }
             return string.Format("AnimalsNeedRescueDesc".Translate(), stringBuilder.ToString());
         }

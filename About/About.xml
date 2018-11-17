@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>[XND] Animal Alerts</name>
+	<name>[XND] Medical Alerts For Animals</name>
 	<author>XeoNovaDan</author>
 	<url>https://ludeon.com/forums/index.php?topic=29503.0</url>
 	<targetVersion>1.0.2059</targetVersion>
-	<description>Adds right-hand alerts for when animals need rescuing, tending and if they're on the brink of death. Never lose an animal to blood loss without notice again!</description>
+	<description>Adds medical alerts for animals that show on the right-hand side of the screen in the same fashion as medical alerts for people. Never lose an animal to blood loss or disease without any notice again!</description>
 </ModMetaData>

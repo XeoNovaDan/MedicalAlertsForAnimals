@@ -8,14 +8,14 @@ using RimWorld;
 
 namespace AnimalAlerts
 {
-    public class Alert_LifeThreateningHediffAnimal : Alert
+    public class Alert_LifeThreateningHediffAnimal : Alert_Critical
     {
 
         private IEnumerable<Pawn> SickAnimals
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.PlayerColonyAnimal()))
+                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.PlayerColonyAnimal_Alive_NoCryptosleep()))
                     for (int i = 0; i < p.health.hediffSet.hediffs.Count; i++)
                     {
                         Hediff diff = p.health.hediffSet.hediffs[i];
@@ -30,7 +30,7 @@ namespace AnimalAlerts
 
         public override string GetLabel()
         {
-            return "PawnsWithLifeThreateningDisease".Translate();
+            return "AnimalsWithLifeThreateningDisease".Translate();
         }
 
         public override string GetExplanation()
@@ -39,7 +39,7 @@ namespace AnimalAlerts
             bool amputatable = false;
             foreach (Pawn pawn in AnimalAlertsUtility.SortedAnimalList(SickAnimals))
             {
-                stringBuilder.AppendLine("    " + pawn.LabelShort + (pawn.HasBondRelation() ? $" {"BondBrackets".Translate()}" : ""));
+                stringBuilder.AppendLine($"    {pawn.LabelShort} {((pawn.Name != null && !pawn.Name.Numerical) ? "(" + pawn.KindLabel + ")" : "")} {(pawn.HasBondRelation() ? "BondBrackets".Translate() : "")}");
                 foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
                 {
                     if (hediff.CurStage != null && hediff.CurStage.lifeThreatening && hediff.Part != null && hediff.Part != pawn.RaceProps.body.corePart)
